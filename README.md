@@ -3,6 +3,7 @@
 
 
 -- Introduction ---
+
 Using the Kairos Face API to detect unknown faces.
 
 Note: Running this prototype relys on a RaspberryPi with a camera modual. 
