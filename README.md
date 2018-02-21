@@ -18,3 +18,5 @@ Running enroll.py begins by asking for the subjects directory name - this is the
 
 --- startCamera.py ---
 This is the heart of the prototype. It initiates the camera modual which takes a photo every two seconds - this is expensive in terms of API calls so I would like it to only take photos when motion is detected. It then sends each image to the Kairos API and analyzes the results. If a face is detected and recognized, the subjects name is printed out and appended to the RecognitionLog.log file in the logs directory. If a face is detected and not recognized by the API, the program immediately sends you an email with the unknown subjects image. The email is sent through a simple SMPT protocol client - smtplib. Information is also printed and appended to the RecognitionLog.log file. It also saves the image in the UnidentifiedPeople directory. When no face is detected, no actions are taken.
+
+--- More programs in the tools directory ---
